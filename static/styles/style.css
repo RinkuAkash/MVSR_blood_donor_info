@@ -311,7 +311,7 @@ form{
 input[type=text],input[type=password]{
 	border-color: 2px solid red;
 	border-radius: 4px;
-	padding: 12px 20px;
+	padding: 10px 18px;
 	width: 20%;
 }
 button{

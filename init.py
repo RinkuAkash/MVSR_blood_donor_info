@@ -26,10 +26,7 @@ def query_db(query, args=(), one= False):
 
 @app.route("/")
 def home():
-	if session['logged_In'] is True:
-		return render_template("index1.html")
-	else:
-		return render_template("index.html")
+	return render_template("index.html")
 
 @app.route("/index",methods=['POST','GET'])
 def index():
