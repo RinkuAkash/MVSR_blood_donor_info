@@ -31,7 +31,7 @@ def home():
 	else:
 		return render_template("index.html")
 
-@app.route("/index",methods=['POST'])
+@app.route("/index",methods=['POST','GET'])
 def index():
 	if request.method == 'POST':
 		roll = request.form['rollno']
@@ -154,7 +154,7 @@ def facts():
 def adminl():
 	return render_template("adminl.html")
 
-@app.route("/admin", methods=['POST'])
+@app.route("/admin", methods=['POST','GET'])
 def admin():
 	if request.method == 'POST':
 		user3 =request.form['username']
