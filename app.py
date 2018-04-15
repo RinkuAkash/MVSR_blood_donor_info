@@ -23,10 +23,12 @@ def query_db(query, args=(), one= False):
 	cur.close()
 	return (rv[0] if rv else None) if one else rv
 
-
 @app.route("/")
 def home():
-	return render_template("index.html")
+	if session['logged_In'] is True:
+		return render_template("index1.html")
+	else:
+		return render_template("index.html")
 
 @app.route("/index",methods=['POST','GET'])
 def index():
@@ -52,6 +54,24 @@ def dlist():
 		cur.execute("SELECT * FROM donor")
 		rows=cur.fetchall()
 		return render_template("dlist.html",rows=rows)
+
+@app.route("/dlist")
+def dlist1():
+	with sqlite3.connect("database.db") as con:
+		con.row_factory=sqlite3.Row
+		cur=con.cursor()
+		cur.execute("SELECT * FROM donor")
+		rows=cur.fetchall()
+		return render_template("dlist1.html",rows=rows)
+
+@app.route("/rlist")
+def rlist1():
+	with sqlite3.connect("database.db") as con:
+		con.row_factory=sqlite3.Row
+		cur=con.cursor()
+		cur.execute("SELECT * FROM user")
+		rows=cur.fetchall()
+		return render_template("rlist1.html",rows=rows)
 
 @app.route("/Rlist")
 def rlist():
@@ -141,11 +161,52 @@ def home1():
 
 @app.route("/vision")
 def vision():
-	return render_template("vision.html")
+	if session['logged_In'] is True:
+		return render_template("vision1.html")
+	else:
+		return render_template("vision.html")
 
 @app.route("/facts")
 def facts():
-	return render_template("facts.html")
+	if session['logged_In'] is True:
+		return render_template("facts1.html")
+	else:
+		return render_template("facts.html")
+
+@app.route("/about")
+def about():
+	if session['logged_In'] is True:
+		return render_template("about1.html")
+	else:
+		return render_template("about.html")
+
+@app.route("/contact")
+def contact():
+	if session['logged_In'] is True:
+		return render_template("contact1.html")
+	else:
+		return render_template("contact.html")
+
+@app.route("/who")
+def who():
+	if session['logged_In'] is True:
+		return render_template("whocan1.html")
+	else:
+		return render_template("whocan.html")
+
+@app.route("/gallery")
+def gallery():
+	if session['logged_In'] is True:
+		return render_template("gallery1.html")
+	else:
+		return render_template("gallery.html")
+
+@app.route("/details")
+def details():
+	if session['logged_In'] is True:
+		return render_template("details1.html")
+	else:
+		return render_template("details.html")
 
 @app.route("/adminl")
 def adminl():

@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Title goes here</title>
+  <meta name="description" content="Description of your site goes here">
+  <meta name="keywords" content="keyword1, keyword2, keyword3">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="main">
+<div class="page">
+<div class="header">
+<div class="banner">
+<h1>MVSR BLOOD DONORINFO</h1>
+
+</div>
+<div class="topmenu">
+<ul>
+  <li style="border-left: medium none;"><a href="index.html">Home</a></li>
+  <li><a href="#">About Us</a></li>
+  <li><a href="#">Login</a></li>
+  <li><a href="#">Registration</a></li>
+  <li><a href="#">Admin login</a></li>
+  <li><a href="#">Donor</a></li>
+  <li><a href="#">Contact</a></li>
+</ul>
+</div>
+</div>
+<div class="content">
+<!--Designed by--><a target="_blank" href="http://www.htmltemplates.net">
+<img src="images/copyright.gif" class="copyright" alt="html templates"></a>
+<div class="content-in">
+<div class="left-panel">
+<h2>Categories</h2>
+<div class="left-content">
+<ul>
+  <li><a href="#">Vision</a></li>
+  <li><a href="#"> Blood donation facts</a></li>
+  <li><a href="#">Who can and who can't</a></li>
+  <li><a href="#">Blood donation gallery</a></li>
+  <li><a href="#">campus details</a></li>
+</ul>
+</div>
+<div class="gap"></div>
+<h2>Blood request list</h2>
+<div class="left-content">
+<ol>
+  <marquee direction="alternate">
+<h3> <font color="red">
+1.Manasa badangpet.</h3>
+</font>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+<h3> 
+	<font color="cyan">
+2.Mallesh balapur. 
+</h3> 
+</font>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+<h3> 3.Akash santhoshnagar.
+</h3> 
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+</marquee>
+</ol>
+</div>
+</div>
+<div class="right-panel">
+<div class="right-panel-in">
+<div class="row">
+<h2 class="title"><span>CONTACT</span></h2>
+<div class="row2">
+<h3>
+This is designed for MVSR Blood Donars
+<br>
+<br>
+<br>
+</h3>
+
+<a href="http://www.mvsrec.edu.in/">
+<img src="D:\blood donar project\final site\icons\logo'.jpg" height="100" width="100"></a>
+</div>
+</div>
+</div>
+
+</div>
+<div class="footer">
+<p>&copy; Designed by cse3 batch 7<a target="_blank" href="http://www.htmltemplates.net"></a></p>
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+<a href="http://www.facebook.com">
+<img src="E:\blood donar project\icons\facebook.jpg" height="45" width="45"> </a> &emsp;
+<a href="http://www.twitter.com">
+<img src="E:\blood donar project\icons\twitter.jpg" height="45" width="45"> </a> &emsp;
+<a href="http://www.pinterest.com">
+<img src="E:\blood donar project\icons\pinterest.jpg" height="45" width="45"> </a> &emsp;
+<a href="http://www.whatsapp.com">
+<img src="E:\blood donar project\icons\whatsapp.jpg" height="45" width="45"> </a> &emsp;
+<a href="http://www.youtube.com">
+<img src="E:\blood donar project\icons\youtube.jpg" height="45" width="45"> </a> &emsp;
+<a href="http://plus.google.com">
+<img src="E:\blood donar project\icons\googlep.jpg" height="45" width="45"> </a> &emsp;
+<br> <br>
+</div>
+</div>
+</div>
+
+</body></html>
