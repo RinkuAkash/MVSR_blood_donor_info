@@ -4,6 +4,7 @@ import sqlite3
 app = Flask(__name__)
 
 app.secret_key='secret key'
+app.config['SECRET_KEY']
 
 def get_db():
 	db = getattr(g,'_database',None)
