@@ -30,6 +30,7 @@ def home():
 		return render_template("index1.html")
 	else:
 		return render_template("index.html")
+	return render_template("index.html")
 
 @app.route("/index",methods=['POST','GET'])
 def index():
