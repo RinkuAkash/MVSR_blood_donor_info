@@ -3,6 +3,7 @@ import sqlite3
 
 app = Flask(__name__)
 
+app.secret_key='secret'
 
 def get_db():
 	db = getattr(g,'_database',None)
@@ -24,11 +25,11 @@ def query_db(query, args=(), one= False):
 
 @app.route("/")
 def home():
-	if session['logged_In'] is True:
-		return render_template("index1.html")
-	else:
-		return render_template("index.html")
 	return render_template("index.html")
+
+@app.route("/homep")
+def homep():
+	return render_template("index1.html")
 
 @app.route("/index",methods=['POST','GET'])
 def index():
@@ -43,7 +44,7 @@ def index():
 		else:
 			session['username']=donor
 			session['logged_In']=True
-			return render_template("index1.html")
+			return redirect(url_for("homep"))
 	return redirect(url_for("home"))
 
 @app.route("/Dlist")
@@ -161,52 +162,59 @@ def home1():
 
 @app.route("/vision")
 def vision():
-	if session['logged_In'] is True:
-		return render_template("vision1.html")
-	else:
-		return render_template("vision.html")
+	return render_template("vision.html")
+
+@app.route("/vision1")
+def vision1():
+	return render_template("vision1.html")
 
 @app.route("/facts")
 def facts():
-	if session['logged_In'] is True:
-		return render_template("facts1.html")
-	else:
-		return render_template("facts.html")
+	return render_template("facts.html")
+
+@app.route("/facts1")
+def facts1():
+	return render_template("facts1.html")
 
 @app.route("/about")
 def about():
-	if session['logged_In'] is True:
-		return render_template("about1.html")
-	else:
-		return render_template("about.html")
+	return render_template("about.html")
+
+@app.route("/about1")
+def aboiut1():
+	return render_template("about1.html")
 
 @app.route("/contact")
 def contact():
-	if session['logged_In'] is True:
-		return render_template("contact1.html")
-	else:
-		return render_template("contact.html")
+	return render_template("contact.html")
+
+@app.route("/contact1")
+def contact1():
+	return render_template("contact1.html")
 
 @app.route("/who")
 def who():
-	if session['logged_In'] is True:
-		return render_template("whocan1.html")
-	else:
-		return render_template("whocan.html")
+	return render_template("whocan.html")
+
+@app.route("/who1")
+def who1():
+	return render_template("whocan1.html")
 
 @app.route("/gallery")
 def gallery():
-	if session['logged_In'] is True:
-		return render_template("gallery1.html")
-	else:
-		return render_template("gallery.html")
+	return render_template("gallery.html")
+
+@app.route("/gallery1")
+def gallery1():
+	return render_template("gallery1.html")
 
 @app.route("/details")
 def details():
-	if session['logged_In'] is True:
-		return render_template("details1.html")
-	else:
-		return render_template("details.html")
+	return render_template("details.html")
+
+@app.route("/details1")
+def details1():
+	return render_template("details1.html")
 
 @app.route("/adminl")
 def adminl():
